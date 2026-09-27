@@ -4,7 +4,7 @@
 <head>
     <title>My Task Manager</title>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="/css/style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -37,7 +37,7 @@
 
         <h2>Add New Task</h2>
 
-        <form action="{{ route('tasks.store') }}" method="POST">
+        <form action="{{ route('tasks.store', [], false) }}" method="POST">
 
             @csrf
 
@@ -241,7 +241,7 @@
 
                     <!-- EDIT -->
                     <a
-                        href="{{ route('tasks.edit', $task->id) }}"
+                        href="{{ route('tasks.edit', $task->id, false) }}"
                         class="edit-button"
                         title="Edit task"
                     >
@@ -251,7 +251,7 @@
 
                     <!-- DELETE -->
                     <form
-                        action="{{ route('tasks.destroy', $task->id) }}"
+                        action="{{ route('tasks.destroy', $task->id, false) }}"
                         method="POST"
                     >
 
@@ -265,7 +265,7 @@
                             onclick="return confirm('Are you sure you want to delete this task?')"
                             title="Delete task"
                         >
-                            ♡
+                            🗑
                         </button>
 
                     </form>

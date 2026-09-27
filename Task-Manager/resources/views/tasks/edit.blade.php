@@ -5,7 +5,7 @@
 
     <title>Edit Task - My Task Manager</title>
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="/css/style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -50,7 +50,7 @@
 
 
         <form
-            action="{{ route('tasks.update', $task->id) }}"
+            action="{{ route('tasks.update', $task->id, false) }}"
             method="POST"
         >
 
@@ -160,7 +160,7 @@
             <div class="edit-buttons">
 
                 <a
-                    href="{{ route('tasks.index') }}"
+                    href="{{ route('tasks.index', [], false) }}"
                     class="back-button"
                 >
                     ← Back to Tasks

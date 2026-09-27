@@ -378,8 +378,8 @@ body {
 
 .edit-button,
 .delete-button {
-    width: 34px;
-    height: 34px;
+    width: 37px;
+    height: 37px;
 
     border: none;
 
@@ -393,7 +393,7 @@ body {
 
     cursor: pointer;
 
-    font-size: 16px;
+    font-size: 20px;
 
     transition: 0.2s;
 }
@@ -405,7 +405,7 @@ body {
 
 .delete-button {
     background: #eef7ef;
-    color: #398455;
+    color: #843939;
 }
 
 .edit-button:hover,

@@ -7,7 +7,7 @@ Project Information
 Project Code: WST21-PM-2026-SF
 Student Name: Lyle Lagnas
 Course & Year: BSIT - 2
-Database Used: MySQL
+Database Used: SQLite 
 
 Features
 
@@ -21,7 +21,7 @@ Technologies Used
 
 * Laravel
 * PHP
-* MySQL
+* SQLite 
 * HTML
 * CSS
 
